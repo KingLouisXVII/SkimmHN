@@ -1,0 +1,47 @@
+Arguments: 
+  /Users/danieljakobian/.nvm/versions/node/v8.10.0/bin/node /usr/local/bin/yarnpkg install
+
+PATH: 
+  /Users/danieljakobian/.nvm/versions/node/v8.10.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "main": "node_modules/expo/AppEntry.js",
+    "scripts": {
+      "start": "expo start",
+      "android": "expo start --android",
+      "ios": "expo start --ios",
+      "eject": "expo eject"
+    },
+    "dependencies": {
+      "expo": "^31.0.2",
+      "react": "16.5.0",
+      "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz"
+    },
+    "devDependencies": {
+      "babel-preset-expo": "^5.0.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://github.com/expo/react-native-maps: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:133094:19)
+      at ontimeout (timers.js:482:11)
+      at tryOnTimeout (timers.js:317:5)
+      at Timer.listOnTimeout (timers.js:277:5)
