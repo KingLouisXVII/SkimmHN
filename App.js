@@ -118,9 +118,7 @@ class Home extends React.Component {
                   <View style={styles.story}>
                       <Text
                         style={styles.text}
-                        onPress={() => this.props.navigation.navigate('Comments', {story: item})}
-                      >
-                      {item.title}
+                        onPress={ () => this.props.navigation.navigate('WebView', { uri: item }) }>{item.title}
                       </Text>
                       <Text style={styles.commentCount} onPress={() => this.props.navigation.navigate('Comments', {story: item})}>
                       {

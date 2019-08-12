@@ -25,12 +25,12 @@ export default class Web extends React.Component {
        )}
        <View style={{ flexDirection: 'row', justifyContent: 'space-around', backgroundColor:'#262525'}}>
          <Button
-          title="<--- comments"
+          title="<--  comments"
           color='#FF6600'
           onPress={()=>this.props.navigation.goBack()}
         />
          <Button
-          title="browser --->"
+          title="browser  -->"
           color='#FF6600'
           onPress={()=>Linking.openURL(uri.url)}
         />
