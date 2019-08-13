@@ -42,7 +42,7 @@ class Home extends React.Component {
     super(props);
     this.state = {
       stories: [],
-      refreshing: false,
+      refreshing: true,
     }
   }
 
@@ -103,6 +103,12 @@ class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+       {this.state.refreshing && (
+         <ActivityIndicator
+           style={{ height: '100%', backgroundColor: '#262525' }}
+           size="large"
+         />
+       )}
         <FlatList
             data={this.state.stories}
             extraData={this.state}
